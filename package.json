@@ -1,0 +1,23 @@
+{
+  "name": "gitxplore-app",
+  "version": "0.1.0",
+  "private": false,
+  "author": {
+    "name": "Divyanshu Maithani",
+    "email": "div.blackcat@gmail.com",
+    "url": "https://github.com/divyanshu013"
+  },
+  "dependencies": {
+    "@appbaseio/reactivesearch": "^2.0.0-alpha-06",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "license": "MIT"
+}
