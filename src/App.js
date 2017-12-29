@@ -35,8 +35,9 @@ class App extends Component {
 		return (
 			<section className="container">
 				<ReactiveBase
-					app="gitxplore-latest"
-					credentials="W7ZomvYgQ:df994896-a25d-4d4e-8724-e26659b93001"
+					app="gitxplore-app"
+					credentials="FoNt3qFgh:4130b46e-e4d0-4e19-ba8d-dbf85bcf2eb7"
+					type="gitxplore-latest"
 					theme={theme}
 				>
 					<div className="flex row-reverse app-container">
@@ -44,12 +45,15 @@ class App extends Component {
 						<div className="results-container">
 							<CategorySearch
 								componentId="repo"
+								filterLabel="Search"
 								dataField={['name', 'description', 'name.raw', 'fullname', 'owner', 'topics']}
 								categoryField="language.raw"
-								queryFormat="and"
 								placeholder="Search Repos"
 								URLParams
 								className="category-search-container results-container"
+								innerClass={{
+									input: 'search-input',
+								}}
 							/>
 							<Results currentTopics={this.state.currentTopics} toggleTopic={this.toggleTopic} />
 						</div>

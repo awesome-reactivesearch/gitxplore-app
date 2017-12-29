@@ -11,8 +11,9 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 		<div className="child m10">
 			<MultiDropdownList
 				componentId="language"
-				dataField="language"
+				dataField="language.raw"
 				title="Language"
+				filterLabel="Language"
 			/>
 		</div>
 		<div className="child m10">
@@ -20,6 +21,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 				componentId="topics"
 				dataField="topics.raw"
 				title="Repo Topics"
+				filterLabel="Topics"
 				size={1000}
 				queryFormat="and"
 				defaultSelected={currentTopics}
@@ -31,6 +33,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 				componentId="pushed"
 				dataField="pushed"
 				title="Last Active"
+				filterLabel="Last Active"
 				data={[
 					{ start: 'now-1M', end: 'now', label: 'Last 30 days' },
 					{ start: 'now-6M', end: 'now', label: 'Last 6 months' },
@@ -43,6 +46,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 				componentId="created"
 				dataField="created"
 				title="Created"
+				filterLabel="Created"
 				data={[
 					{
 						start: '2017-01-01T00:00:00Z',

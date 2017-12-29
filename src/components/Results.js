@@ -1,16 +1,16 @@
 import React from 'react';
-import { ReactiveList } from '@appbaseio/reactivesearch';
+import { SelectedFilters, ReactiveList } from '@appbaseio/reactivesearch';
 import PropTypes from 'prop-types';
 
 import Topic from './Topic';
 
 const onResultStats = (results, time) => (
-	<div className="flex justify-end m1">
+	<div className="flex justify-end">
 		{results} results found in {time}ms
 	</div>
 );
 
-const onData = ({ _source: data }, currentTopics, toggleTopic) => (
+const onData = (data, currentTopics, toggleTopic) => (
 	<div className="result-item" key={data.fullname}>
 		<div className="flex justify-center align-center result-card-header">
 			<img className="avatar" src={data.avatar} alt="User avatar" />
@@ -45,27 +45,73 @@ const onData = ({ _source: data }, currentTopics, toggleTopic) => (
 );
 
 const Results = ({ toggleTopic, currentTopics }) => (
-	<ReactiveList
-		componentId="results"
-		dataField="name"
-		onData={data => onData(data, currentTopics, toggleTopic)}
-		onResultStats={onResultStats}
-		react={{
-			and: ['name', 'language', 'topics', 'pushed', 'created', 'stars', 'forks', 'repo'],
-		}}
-		pagination
-		innerClass={{
-			list: 'result-list-container',
-			pagination: 'result-list-pagination',
-		}}
-		className="result-list"
-		size={6}
-	/>
+	<div className="result-list">
+		<SelectedFilters className="m1" />
+		<ReactiveList
+			componentId="results"
+			dataField="name"
+			onData={data => onData(data, currentTopics, toggleTopic)}
+			onResultStats={onResultStats}
+			react={{
+				and: ['name', 'language', 'topics', 'pushed', 'created', 'stars', 'forks', 'repo'],
+			}}
+			pagination
+			innerClass={{
+				list: 'result-list-container',
+				pagination: 'result-list-pagination',
+				resultsInfo: 'result-list-info',
+			}}
+			size={6}
+			sortOptions={[
+				{
+					label: 'Best Match',
+					dataField: '_score',
+					sortBy: 'desc',
+				},
+				{
+					label: 'Most Stars',
+					dataField: 'stars',
+					sortBy: 'desc',
+				},
+				{
+					label: 'Fewest Stars',
+					dataField: 'stars',
+					sortBy: 'asc',
+				},
+				{
+					label: 'Most Forks',
+					dataField: 'forks',
+					sortBy: 'desc',
+				},
+				{
+					label: 'Fewest Forks',
+					dataField: 'forks',
+					sortBy: 'asc',
+				},
+				{
+					label: 'A to Z',
+					dataField: 'owner.raw',
+					sortBy: 'asc',
+				},
+				{
+					label: 'Z to A',
+					dataField: 'owner.raw',
+					sortBy: 'desc',
+				},
+				{
+					label: 'Recently Updated',
+					dataField: 'pushed',
+					sortBy: 'desc',
+				},
+				{
+					label: 'Least Recently Updated',
+					dataField: 'pushed',
+					sortBy: 'asc',
+				},
+			]}
+		/>
+	</div>
 );
-
-onData.propTypes = {
-	_source: PropTypes.object
-};
 
 Results.propTypes = {
 	toggleTopic: PropTypes.func,
