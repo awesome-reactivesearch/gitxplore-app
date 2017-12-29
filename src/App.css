@@ -200,7 +200,8 @@
   margin: 10px 0;
 }
 
-.m1 {
+.m1,
+.result-list .m1 {
   margin: 1rem;
 }
 
