@@ -53,7 +53,7 @@ const Results = ({ toggleTopic, currentTopics }) => (
 			onData={data => onData(data, currentTopics, toggleTopic)}
 			onResultStats={onResultStats}
 			react={{
-				and: ['name', 'language', 'topics', 'pushed', 'created', 'stars', 'forks', 'repo'],
+				and: ['language', 'topics', 'pushed', 'created', 'stars', 'forks', 'repo'],
 			}}
 			pagination
 			innerClass={{
