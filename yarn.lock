@@ -2,24 +2,23 @@
 # yarn lockfile v1
 
 
-"@appbaseio/reactivecore@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@appbaseio/reactivecore/-/reactivecore-1.2.4.tgz#4d0e6018b73772c78125fbba31efba4cb4ba9df4"
+"@appbaseio/reactivecore@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@appbaseio/reactivecore/-/reactivecore-1.2.5.tgz#8db23e7a4da00ff04b47e8464276e45a96066737"
   dependencies:
     prop-types "^15.6.0"
     redux "^3.7.2"
     redux-thunk "^2.2.0"
 
-"@appbaseio/reactivesearch@^2.0.0-beta":
-  version "2.0.0-beta"
-  resolved "https://registry.yarnpkg.com/@appbaseio/reactivesearch/-/reactivesearch-2.0.0-beta.tgz#2ab78052037a9178d236b25879f8a693fbb9a77f"
+"@appbaseio/reactivesearch@^2.0.0-beta-01":
+  version "2.0.0-beta-01"
+  resolved "https://registry.yarnpkg.com/@appbaseio/reactivesearch/-/reactivesearch-2.0.0-beta-01.tgz#000bb8ce00e44e13e51d67c33075f251e4bab511"
   dependencies:
-    "@appbaseio/reactivecore" "^1.2.4"
+    "@appbaseio/reactivecore" "^1.2.5"
     appbase-js "^2.2.1"
     downshift "^1.22.1"
     emotion "^8.0.11"
     emotion-theming "^8.0.11"
-    polished "^1.9.0"
     prop-types "^15.6.0"
     react-day-picker "^7.0.5"
     react-emotion "^8.0.11"
@@ -4827,10 +4826,6 @@ pkg-dir@^2.0.0:
 pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
-
-polished@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-1.9.0.tgz#76d277d6610dbcb85477dbba1bd1aa8e642741b6"
 
 portfinder@^1.0.9:
   version "1.0.13"
