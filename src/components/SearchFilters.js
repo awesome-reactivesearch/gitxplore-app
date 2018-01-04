@@ -12,6 +12,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 			<MultiDropdownList
 				componentId="language"
 				dataField="language.raw"
+				placeholder="Select languages"
 				title="Language"
 				filterLabel="Language"
 			/>
@@ -20,6 +21,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 			<MultiDropdownList
 				componentId="topics"
 				dataField="topics.raw"
+				placeholder="Select topics"
 				title="Repo Topics"
 				filterLabel="Topics"
 				size={1000}
@@ -32,6 +34,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 			<SingleDropdownRange
 				componentId="pushed"
 				dataField="pushed"
+				placeholder="Repo last active"
 				title="Last Active"
 				filterLabel="Last Active"
 				data={[
@@ -45,6 +48,7 @@ const SearchFilters = ({ currentTopics, setTopics, visible }) => (
 			<SingleDropdownRange
 				componentId="created"
 				dataField="created"
+				placeholder="Repo created"
 				title="Created"
 				filterLabel="Created"
 				data={[

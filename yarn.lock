@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@appbaseio/reactivecore@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@appbaseio/reactivecore/-/reactivecore-1.2.3.tgz#1ba4df0cbf2c1d664ae64c2b870fb33ac6c2a924"
+"@appbaseio/reactivecore@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@appbaseio/reactivecore/-/reactivecore-1.2.4.tgz#4d0e6018b73772c78125fbba31efba4cb4ba9df4"
   dependencies:
     prop-types "^15.6.0"
     redux "^3.7.2"
     redux-thunk "^2.2.0"
 
-"@appbaseio/reactivesearch@^2.0.0-alpha-10":
-  version "2.0.0-alpha-10"
-  resolved "https://registry.yarnpkg.com/@appbaseio/reactivesearch/-/reactivesearch-2.0.0-alpha-10.tgz#e2d22c8faee68f8a79898a8bd29c409dbd1b0483"
+"@appbaseio/reactivesearch@^2.0.0-beta":
+  version "2.0.0-beta"
+  resolved "https://registry.yarnpkg.com/@appbaseio/reactivesearch/-/reactivesearch-2.0.0-beta.tgz#2ab78052037a9178d236b25879f8a693fbb9a77f"
   dependencies:
-    "@appbaseio/reactivecore" "^1.2.3"
+    "@appbaseio/reactivecore" "^1.2.4"
     appbase-js "^2.2.1"
     downshift "^1.22.1"
     emotion "^8.0.11"

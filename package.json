@@ -1,6 +1,6 @@
 {
   "name": "gitxplore-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "author": {
     "name": "Divyanshu Maithani",
@@ -9,7 +9,7 @@
   },
   "homepage": "https://appbaseio-apps.github.io/gitxplore-app",
   "dependencies": {
-    "@appbaseio/reactivesearch": "^2.0.0-alpha-10",
+    "@appbaseio/reactivesearch": "^2.0.0-beta",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
