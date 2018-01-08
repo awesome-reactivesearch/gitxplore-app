@@ -1,7 +1,8 @@
 # GitXplore app :octocat:
 
-A GitHub repo explorer app built using
+A GitHub repo explorer app built with 
 
-- React
-- ReactiveSearch
-- Appbaseio
+- [React](https://reactjs.org/)
+- [ReactiveSearch](https://opensource.appbase.io/reactivesearch)
+- [Appbaseio](https://appbase.io)
+- ❤
