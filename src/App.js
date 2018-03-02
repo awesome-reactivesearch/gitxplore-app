@@ -36,7 +36,7 @@ class App extends Component {
 			<section className="container">
 				<ReactiveBase
 					app="gitxplore-app"
-					credentials="FoNt3qFgh:4130b46e-e4d0-4e19-ba8d-dbf85bcf2eb7"
+					credentials="4oaS4Srzi:f6966181-1eb4-443c-8e0e-b7f38e7bc316"
 					type="gitxplore-latest"
 					theme={theme}
 				>
