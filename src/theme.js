@@ -1,8 +1,12 @@
 const theme = {
-	fontFamily: 'Raleway, Helvetica, sans-serif',
-	primaryColor: '#008000',
+	typography: {
+		fontFamily: 'Raleway, Helvetica, sans-serif',
+	},
+	colors: {
+		primaryColor: '#008000',
+		titleColor: 'white'
+	},
 	secondaryColor: 'mediumseagreen',
-	titleColor: 'white'
 };
 
 export default theme;
