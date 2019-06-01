@@ -1,31 +1,18 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import SearchFilters from './SearchFilters';
 
-class Header extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			visible: false,
-		};
-	}
+const Header = props => {
+	
+	const [visible, toggleVisibility] = useState(false)
 
-	toggleVisibility = () => {
-		const visible = !this.state.visible;
-		this.setState({
-			visible,
-		});
-	}
-
-	render() {
-		return (
-			<nav className={`navbar ${this.state.visible ? 'active' : ''}`}>
-				<div className="title">GitXplore</div>
-				<div className="btn toggle-btn" onClick={this.toggleVisibility}>Toggle Filters</div>
-				<SearchFilters {...this.props} visible={this.state.visible} />
-			</nav>
-		);
-	}
+	return (
+		<nav className={`navbar ${visible ? 'active' : ''}`}>
+			<div className="title">GitXplore</div>
+			<div className="btn toggle-btn" onClick={() => toggleVisibility(!visible)}>Toggle Filters</div>
+			<SearchFilters {...props} visible={visible} />
+		</nav>
+	);
 }
 
 export default Header;

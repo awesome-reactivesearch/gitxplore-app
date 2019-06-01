@@ -36,6 +36,7 @@
 .result-list-info {
   margin: 1rem;
   justify-content: space-between;
+
 }
 
 .result-list-pagination {
@@ -283,6 +284,12 @@
 		right: auto;
 		padding: 0 30px;
 		margin-top: 65px;
+  }
+
+  .result-list-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column !important;
   }
 
   .search-input {
