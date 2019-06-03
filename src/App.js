@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactiveBase, CategorySearch } from '@appbaseio/reactivesearch';
+import { ReactiveBase, DataSearch } from '@appbaseio/reactivesearch';
 
 import Header from './components/Header';
 import Results from './components/Results';
@@ -28,7 +28,7 @@ const App = props => {
 				<div className="flex row-reverse app-container">
 					<Header currentTopics={currentTopics} setTopics={setTopics} />
 					<div className="results-container">
-						<CategorySearch
+						<DataSearch
 							componentId="repo"
 							filterLabel="Search"
 							dataField={['name', 'description', 'name.raw', 'fullname', 'owner', 'topics']}

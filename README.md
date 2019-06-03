@@ -11,7 +11,6 @@ Read how we built it in this [freecodecamp post here](https://medium.freecodecam
 yarn install && yarn start
 ```
 
-
 Built with 
 
 - [React](https://reactjs.org/)
