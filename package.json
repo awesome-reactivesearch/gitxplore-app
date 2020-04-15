@@ -9,7 +9,7 @@
   },
   "homepage": "https://appbaseio-apps.github.io/gitxplore-app",
   "dependencies": {
-    "@appbaseio/reactivesearch": "^3.0.0-rc.12",
+    "@appbaseio/reactivesearch": "^3.7.11",
     "react": "^16.8.0",
     "react-dom": "^16.2.0",
     "react-scripts": "3.0.1"
