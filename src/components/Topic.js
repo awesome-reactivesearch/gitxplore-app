@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Topic extends Component {
-	handleClick = () => {
-		this.props.toggleTopic(this.props.children);
-	}
-	render() {
-		return (
-			<div className={`topic ${this.props.active ? 'active' : ''}`} onClick={this.handleClick}>
-				#{this.props.children}
-			</div>
-		);
-	}
+const Topic = props => {
+	return (
+		<div className={`topic ${props.active ? 'active' : ''}`} onClick={() => props.toggleTopic(props.children)}>
+			#{props.children}
+		</div>
+	);
 }
 
 Topic.propTypes = {
